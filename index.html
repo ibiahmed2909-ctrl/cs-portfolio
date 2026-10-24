@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Ahmed | Computer Science Student &amp; Developer</title>
+    <meta name="description" content="Portfolio of Ibrahim Ahmed, a second-year BSc Computer Science student at Aston University seeking a year-in-industry placement or internship in cybersecurity, software engineering and data analysis.">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0f'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='bold' text-anchor='middle' fill='%2300f0ff'%3EIA%3C/text%3E%3C/svg%3E">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-logo">
+            <a href="#home" class="logo-link"><span class="glitch" data-text="IA">IA</span></a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link">HOME</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#skills" class="nav-link">SKILLS</a>
+            <a href="#journey" class="nav-link">JOURNEY</a>
+            <a href="#games" class="nav-link">PROJECTS</a>
+            <a href="#placement" class="nav-link">PLACEMENT</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark theme">
+                <span class="theme-icon">◐</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-3d-container">
+                <div class="floating-cube"></div>
+                <div class="floating-cube"></div>
+                <div class="floating-cube"></div>
+            </div>
+            <h1 class="hero-title">
+                <span class="glitch-lg" data-text="IBRAHIM">IBRAHIM</span>
+                <span class="glitch-lg" data-text="AHMED">AHMED</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <div class="hero-tags">
+                <span class="tag">&lt;CS_STUDENT&gt;</span>
+                <span class="tag">&lt;ASTON_UNIVERSITY&gt;</span>
+                <span class="tag">&lt;FRONTEND_DEV&gt;</span>
+                <span class="tag">&lt;SEEKING_PLACEMENT&gt;</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#about" class="cta-button">
+                    <span>ENTER PORTFOLIO</span>
+                    <div class="button-glow"></div>
+                </a>
+                <a href="#contact" class="cta-button cta-outline">
+                    <span>GET IN TOUCH</span>
+                    <div class="button-glow"></div>
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+            <span>SCROLL</span>
+            <i></i>
+        </a>
+        <div class="scanline"></div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats" aria-label="At a glance">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat reveal">
+                    <div class="stat-number"><span class="count" data-target="4">0</span></div>
+                    <div class="stat-label">PROJECTS BUILT</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat-number"><span class="count" data-target="7">0</span></div>
+                    <div class="stat-label">LANGUAGES &amp; TECHS</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat-number"><span class="count" data-target="3">0</span></div>
+                    <div class="stat-label">CISCO CERTIFICATIONS</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat-number">Y<span class="count" data-target="2">0</span></div>
+                    <div class="stat-label">BSC COMPUTER SCIENCE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-text="ABOUT_ME">ABOUT_ME</h2>
+
+            <div class="about-layout">
+                <div class="about-card spot reveal bio-card">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <span class="card-icon">⚡</span>
+                        <h3>WHO I AM</h3>
+                    </div>
+                    <p>I'm Ibrahim, a second-year BSc Computer Science student at Aston University. I've always been curious about how computers, software and apps actually work behind the screen, and that curiosity is what pointed me towards Computer Science. I like solving problems and I like being creative, and programming lets me do both at the same time.</p>
+                    <p>This year I'm studying Data Structures and Object-Oriented Programming, Introduction to Artificial Intelligence, and Business and Enterprise. The first two are changing how I plan and structure my code, and the AI module is making me think about problems in a completely different way. Business and Enterprise is a good reminder that software exists to solve real problems for real people, not just to run.</p>
+                    <p>What I enjoy most is turning an idea into something that actually works. Web development and interactive applications are where I'm happiest, especially the interface side, where small details like spacing, colour and motion decide whether something feels professional. Seeing something I built from scratch finally run never really gets old.</p>
+                    <p>I'm now looking for a year-in-industry placement or internship where I can learn from experienced people and contribute properly, ideally in cybersecurity, software engineering or data analysis.</p>
+                </div>
+
+                <div class="about-side">
+                    <div class="about-card spot reveal">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <span class="card-icon">📋</span>
+                            <h3>QUICK FACTS</h3>
+                        </div>
+                        <dl class="fact-list">
+                            <div><dt>UNIVERSITY</dt><dd>Aston University</dd></div>
+                            <div><dt>COURSE</dt><dd>BSc Computer Science</dd></div>
+                            <div><dt>YEAR</dt><dd>Second year</dd></div>
+                            <div><dt>LOOKING FOR</dt><dd>Placement year / internship</dd></div>
+                            <div><dt>INTERESTED IN</dt><dd>Cybersecurity, software engineering, data analysis</dd></div>
+                        </dl>
+                    </div>
+                    <div class="about-card spot reveal">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <span class="card-icon">🚀</span>
+                            <h3>FOCUS</h3>
+                        </div>
+                        <p>Specialising in frontend development and algorithmic problem-solving. Creating immersive, interactive web experiences with modern technologies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="sub-title">BEYOND THE CODE</h3>
+            <div class="interest-grid">
+                <div class="about-card spot reveal interest-card">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <span class="card-icon">💻</span>
+                        <h3>PROGRAMMING</h3>
+                    </div>
+                    <p>Python, Java, JavaScript and PHP, plus SQL for databases. I like projects where I can build something visible and then keep improving it.</p>
+                </div>
+                <div class="about-card spot reveal interest-card">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <span class="card-icon">🎨</span>
+                        <h3>GRAPHIC DESIGN</h3>
+                    </div>
+                    <p>I design logos, posters, UI concepts and edits using Photoshop, other Adobe apps and CapCut. It feeds straight into how I build websites.</p>
+                </div>
+                <div class="about-card spot reveal interest-card">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <span class="card-icon">🎮</span>
+                        <h3>GAMING</h3>
+                    </div>
+                    <p>Mostly puzzle games and horror games. Puzzle games are a good mental workout, and my Cyber Memory and Neon Snake projects came from that interest.</p>
+                </div>
+                <div class="about-card spot reveal interest-card">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <span class="card-icon">🌍</span>
+                        <h3>OUTSIDE OF CODE</h3>
+                    </div>
+                    <p>I go to the gym, love travelling, and enjoy DIY. Working out how things fit together is a lot like programming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-text="SKILLS">SKILLS</h2>
+            <div class="skills-layout">
+                <div class="about-card spot reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <span class="card-icon">📊</span>
+                        <h3>TECHNICAL PROFICIENCY</h3>
+                    </div>
+                    <!-- EDIT: change --level (0-100) and the label to match how you honestly rate yourself -->
+                    <div class="skill-bar reveal" style="--level:90">
+                        <div class="skill-bar-head"><span>HTML / CSS</span><span class="skill-level">Advanced</span></div>
+                        <div class="bar-track"><div class="bar-fill"></div></div>
+                    </div>
+                    <div class="skill-bar reveal" style="--level:80">
+                        <div class="skill-bar-head"><span>JavaScript</span><span class="skill-level">Confident</span></div>
+                        <div class="bar-track"><div class="bar-fill"></div></div>
+                    </div>
+                    <div class="skill-bar reveal" style="--level:80">
+                        <div class="skill-bar-head"><span>Python</span><span class="skill-level">Confident</span></div>
+                        <div class="bar-track"><div class="bar-fill"></div></div>
+                    </div>
+                    <div class="skill-bar reveal" style="--level:75">
+                        <div class="skill-bar-head"><span>Java</span><span class="skill-level">Confident</span></div>
+                        <div class="bar-track"><div class="bar-fill"></div></div>
+                    </div>
+                    <div class="skill-bar reveal" style="--level:70">
+                        <div class="skill-bar-head"><span>SQL / MySQL</span><span class="skill-level">Intermediate</span></div>
+                        <div class="bar-track"><div class="bar-fill"></div></div>
+                    </div>
+                    <div class="skill-bar reveal" style="--level:65">
+                        <div class="skill-bar-head"><span>PHP</span><span class="skill-level">Intermediate</span></div>
+                        <div class="bar-track"><div class="bar-fill"></div></div>
+                    </div>
+                </div>
+
+                <div class="skills-side">
+                    <div class="about-card spot reveal">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <span class="card-icon">🎯</span>
+                            <h3>SKILLS</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Algorithms</span>
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="about-card spot reveal">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <span class="card-icon">🛠️</span>
+                            <h3>TOOLS</h3>
+                        </div>
+                        <div class="chip-list">
+                            <span class="skill-tag cyan">GitHub</span>
+                            <span class="skill-tag cyan">VS Code</span>
+                            <span class="skill-tag cyan">PyCharm</span>
+                            <span class="skill-tag cyan">IntelliJ IDEA</span>
+                            <span class="skill-tag cyan">Streamlit</span>
+                            <span class="skill-tag cyan">Google Colab</span>
+                            <span class="skill-tag cyan">phpMyAdmin</span>
+                            <span class="skill-tag cyan">Photoshop</span>
+                            <span class="skill-tag cyan">Adobe Apps</span>
+                            <span class="skill-tag cyan">CapCut</span>
+                        </div>
+                    </div>
+                    <div class="about-card spot reveal">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <span class="card-icon">🤝</span>
+                            <h3>DESIGN &amp; PEOPLE</h3>
+                        </div>
+                        <div class="chip-list">
+                            <span class="skill-tag">Graphic Design</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Problem-solving</span>
+                            <span class="skill-tag">Teamwork</span>
+                            <span class="skill-tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section: Education, Experience, Certifications -->
+    <section id="journey" class="journey">
+        <div class="container">
+            <h2 class="section-title" data-text="JOURNEY">JOURNEY</h2>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="about-card spot timeline-card">
+                        <div class="card-glow"></div>
+                        <span class="timeline-date">2025 — PRESENT</span>
+                        <h3>BSc Computer Science</h3>
+                        <span class="timeline-place">Aston University</span>
+                        <p>Currently in my second year. Core modules include Data Structures and Object-Oriented Programming, Introduction to Artificial Intelligence, and Business and Enterprise as of right now, more modules are yet to come.</p>
+                        <div class="game-tags">
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">Artificial Intelligence</span>
+                            <span class="tech-tag">Business</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="about-card spot timeline-card">
+                        <div class="card-glow"></div>
+                        <span class="timeline-date">2024 — 2025</span>
+                        <h3>Cisco Networking Academy</h3>
+                        <span class="timeline-place">Three certifications completed</span>
+                        <p>Built a foundation in hardware, operating systems and cybersecurity through Cisco's online courses. Details are in the certifications below.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="about-card spot timeline-card">
+                        <div class="card-glow"></div>
+                        <span class="timeline-date">2023 — 2024</span>
+                        <h3>Market Sales Assistant</h3>
+                        <span class="timeline-place">Customer-facing role</span>
+                        <p>Handled sales, organised products and helped customers throughout the day. It taught me to communicate clearly, stay organised, and stay calm and helpful when things get busy.</p>
+                        <div class="game-tags">
+                            <span class="tech-tag">Customer Service</span>
+                            <span class="tech-tag">Sales</span>
+                            <span class="tech-tag">Organisation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="sub-title">CERTIFICATIONS</h3>
+            <div class="cert-grid">
+                <div class="about-card spot reveal cert-card">
+                    <div class="card-glow"></div>
+                    <span class="cert-icon">🖥️</span>
+                    <h4>Computer Hardware Basics</h4>
+                    <span class="cert-meta">Cisco Networking Academy</span>
+                    <span class="tech-tag">2024 – 2025</span>
+                </div>
+                <div class="about-card spot reveal cert-card">
+                    <div class="card-glow"></div>
+                    <span class="cert-icon">🛡️</span>
+                    <h4>Introduction to Cybersecurity</h4>
+                    <span class="cert-meta">Cisco Networking Academy</span>
+                    <span class="tech-tag">2024 – 2025</span>
+                </div>
+                <div class="about-card spot reveal cert-card">
+                    <div class="card-glow"></div>
+                    <span class="cert-icon">⚙️</span>
+                    <h4>Operating Systems Basics</h4>
+                    <span class="cert-meta">Cisco Networking Academy</span>
+                    <span class="tech-tag">2024 – 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games / Projects Section -->
+    <section id="games" class="games">
+        <div class="container">
+            <h2 class="section-title" data-text="PROJECTS">PROJECTS</h2>
+
+            <div class="filter-bar" id="filterBar">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="games">GAMES</button>
+                <button class="filter-btn" data-filter="web">WEB</button>
+                <button class="filter-btn" data-filter="python">PYTHON</button>
+            </div>
+
+            <div class="games-grid">
+                <!-- Snake Game Card -->
+                <div class="game-card spot" id="snakeCard" data-category="games js">
+                    <div class="card-glow"></div>
+                    <div class="game-preview">
+                        <canvas id="snakePreview" width="300" height="300"></canvas>
+                    </div>
+                    <div class="game-info">
+                        <h3>NEON SNAKE</h3>
+                        <p>Classic snake game with cyberpunk aesthetics. Navigate the grid, collect orbs, and watch your trail glow!</p>
+                        <div class="game-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Canvas API</span>
+                            <span class="tech-tag">Algorithms</span>
+                        </div>
+                        <button class="play-button" onclick="openGame('snake')">
+                            <span>PLAY GAME</span>
+                            <div class="button-glow"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Memory Game Card -->
+                <div class="game-card spot" id="memoryCard" data-category="games js">
+                    <div class="card-glow"></div>
+                    <div class="game-preview">
+                        <div id="memoryPreview" class="memory-preview">
+                            <div class="preview-card"></div>
+                            <div class="preview-card"></div>
+                            <div class="preview-card"></div>
+                            <div class="preview-card"></div>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>CYBER MEMORY</h3>
+                        <p>Test your memory with this futuristic card matching game. Find pairs and beat your best time!</p>
+                        <div class="game-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Game Logic</span>
+                        </div>
+                        <button class="play-button" onclick="openGame('memory')">
+                            <span>PLAY GAME</span>
+                            <div class="button-glow"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Hangman -->
+                <div class="game-card spot" data-category="games python">
+                    <div class="card-glow"></div>
+                    <div class="game-preview">
+<img class="project-shot" src="assets/hangman-menu.jpg" width="1200" height="599" loading="lazy" decoding="async" alt="Hangman game main menu: a wooden hanging sign titled Hangman with Play Game, How To Play and Settings buttons over a sunset lake">
+                    </div>
+                    <div class="game-info">
+                        <h3>HANGMAN GAME</h3>
+                        <p>A word-guessing game built in Python and presented through a Streamlit interface, with the game logic handled in code and a simple, clean layout for playing.</p>
+                        <div class="game-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Game Logic</span>
+                        </div>
+                        <a class="play-button link-btn" href="https://ibrahim-hangman.streamlit.app" target="_blank" rel="noopener noreferrer">
+                            <span>PLAY GAME</span>
+                            <div class="button-glow"></div>
+                        </a>
+                        <!-- EDIT: put your repo / live link in href, then delete the data-placeholder attribute -->
+                        <a class="play-button link-btn" data-placeholder href="https://github.com/YOUR-USERNAME/hangman" target="_blank" rel="noopener">
+                            <span>VIEW CODE</span>
+                            <div class="button-glow"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CV Database -->
+                <div class="game-card spot" data-category="web php">
+                    <div class="card-glow"></div>
+                    <div class="game-preview">
+<pre class="code-snippet"><span class="c-k">$sql</span> = <span class="c-s">"SELECT name, skills
+        FROM cv_profiles
+        WHERE skills LIKE ?"</span>;
+
+<span class="c-k">$stmt</span>-&gt;<span class="c-f">execute</span>([<span class="c-k">$term</span>]);
+
+<span class="c-c">// MySQL + phpMyAdmin</span></pre>
+                    </div>
+                    <div class="game-info">
+                        <h3>CV DATABASE WEBSITE</h3>
+                        <p>A database-driven website built with PHP and MySQL for storing and displaying CV information, with the database managed through phpMyAdmin.</p>
+                        <div class="game-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">phpMyAdmin</span>
+                        </div>
+                        <a class="play-button link-btn" data-placeholder href="https://github.com/YOUR-USERNAME/cv-database" target="_blank" rel="noopener">
+                            <span>VIEW CODE</span>
+                            <div class="button-glow"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Next project -->
+                <div class="game-card coming-soon" data-category="all-only">
+                    <div class="game-preview">
+                        <div class="loading-orb"></div>
+                    </div>
+                    <div class="game-info">
+                        <h3>NEXT PROJECT LOADING…</h3>
+                        <p>Always building and learning. More projects will be added here as I make them.</p>
+                        <div class="game-tags">
+                            <span class="tech-tag">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placement Section -->
+    <section id="placement" class="placement">
+        <div class="container">
+            <h2 class="section-title" data-text="PLACEMENT">PLACEMENT</h2>
+            <p class="section-intro reveal">I'm looking for a year-in-industry placement or internship where I can learn from a strong team and make a real contribution. These are the areas I'm most interested in.</p>
+
+            <div class="about-grid">
+                <div class="about-card spot reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <span class="card-icon">🛡️</span>
+                        <h3>CYBERSECURITY</h3>
+                    </div>
+                    <p>I've completed Cisco's Introduction to Cybersecurity and I'm keen to understand how systems get attacked and protected in a real working environment.</p>
+                </div>
+                <div class="about-card spot reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <span class="card-icon">💻</span>
+                        <h3>SOFTWARE ENGINEERING</h3>
+                    </div>
+                    <p>Object-oriented programming, data structures and Git/GitHub, backed by projects in Java, Python, PHP and JavaScript. I want to build things people use.</p>
+                </div>
+                <div class="about-card spot reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <span class="card-icon">📈</span>
+                        <h3>DATA ANALYSIS</h3>
+                    </div>
+                    <p>Comfortable with SQL and MySQL, and I've used Python with tools like Streamlit and Google Colab. I enjoy finding what a dataset is actually telling you.</p>
+                </div>
+            </div>
+
+            <div class="bring-box reveal">
+                <h3 class="sub-title left">WHAT I BRING</h3>
+                <div class="chip-list">
+                    <span class="skill-tag cyan">Quick learner</span>
+                    <span class="skill-tag cyan">Strong problem-solving</span>
+                    <span class="skill-tag cyan">Clear communication</span>
+                    <span class="skill-tag cyan">Teamwork</span>
+                    <span class="skill-tag cyan">Customer-facing experience</span>
+                    <span class="skill-tag cyan">Design eye for UI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-text="CONNECT">CONNECT</h2>
+            <div class="contact-content">
+                <div class="contact-box spot reveal">
+                    <div class="card-glow"></div>
+                    <h3>LET'S BUILD SOMETHING AMAZING</h3>
+                    <p>Interested in collaborating or just want to chat about tech?</p>
+                    <a href="mailto:ibiahmed2909@gmail.com" class="email-link">
+                        <span class="email-icon">✉</span>
+                        ibiahmed2909@gmail.com
+                    </a>
+                    <button type="button" class="copy-btn" id="copyEmail">COPY EMAIL</button>
+                    <div class="social-links">
+                        <!-- EDIT: add your real URLs, then delete the data-placeholder attribute on each link to show it -->
+                        <a class="social-link" data-placeholder href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GITHUB</a>
+                        <a class="social-link" data-placeholder href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">LINKEDIN</a>
+                        <a class="social-link" data-placeholder href="Ibrahim_Ahmed_CV.pdf" target="_blank" rel="noopener">DOWNLOAD CV</a>
+                    </div>
+                    <div class="contact-tags">
+                        <span class="tag">&lt;OPEN_TO_OPPORTUNITIES&gt;</span>
+                    </div>
+                </div>
+
+                <form class="contact-box spot reveal contact-form" id="contactForm" novalidate>
+                    <div class="card-glow"></div>
+                    <h3>SEND A MESSAGE</h3>
+                    <div class="form-field">
+                        <label for="cfName">NAME</label>
+                        <input type="text" id="cfName" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="cfEmail">EMAIL</label>
+                        <input type="email" id="cfEmail" name="email" placeholder="you@company.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="cfMessage">MESSAGE</label>
+                        <textarea id="cfMessage" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+                    </div>
+                    <button type="submit" class="play-button">
+                        <span>SEND MESSAGE</span>
+                        <div class="button-glow"></div>
+                    </button>
+                    <small class="form-note">This opens your email app with the message ready to send.</small>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Ibrahim Ahmed | Crafted with ⚡ at Aston University</p>
+        <p class="footer-sub">Built with HTML, CSS &amp; vanilla JavaScript</p>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Game Modals -->
+    <div id="snakeModal" class="game-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeGame('snake')">&times;</button>
+            <div class="game-container">
+                <div class="game-header">
+                    <h2>NEON SNAKE</h2>
+                    <div class="game-stats">
+                        <span>SCORE: <span id="snakeScore">0</span></span>
+                        <span>HIGH: <span id="snakeHigh">0</span></span>
+                    </div>
+                </div>
+                <div class="neon-bar"></div>
+                <canvas id="snakeGame" width="600" height="600"></canvas>
+                <div class="game-controls">
+                    <p>USE ARROW KEYS TO MOVE</p>
+                    <button onclick="restartSnake()" class="restart-btn">RESTART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="memoryModal" class="game-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeGame('memory')">&times;</button>
+            <div class="game-container">
+                <div class="game-header">
+                    <h2>CYBER MEMORY</h2>
+                    <div class="game-stats">
+                        <span>MOVES: <span id="memoryMoves">0</span></span>
+                        <span>TIME: <span id="memoryTime">0:00</span></span>
+                    </div>
+                </div>
+                <div class="neon-bar"></div>
+                <div id="memoryGame" class="memory-game-grid"></div>
+                <div class="game-controls">
+                    <p>FIND ALL MATCHING PAIRS</p>
+                    <button onclick="restartMemory()" class="restart-btn">RESTART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="particles.js"></script>
+    <script src="main.js"></script>
+    <script src="snake.js"></script>
+    <script src="memory.js"></script>
+</body>
+</html>
